@@ -1,0 +1,41 @@
+.primary-background {
+	background: #2196f3!important;
+}
+.primary-text-color {
+	color: #2196f3!important;
+}
+.pad-icon-left {
+	padding-left: 5px;
+}
+.pad-icon-right {
+	padding-right: 5px;
+}
+.pad-icon-bottom {
+	padding-bottom: 10px;
+}
+.pad-icon-top {
+	padding-top: 10px;
+}
+.mar-top {
+	margin-top: 10px;
+}
+.mar-bottom {
+	margin-bottom: 10px;
+}
+.display-flex {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+.pad {
+	padding: 15px;
+}
+.mar {
+	margin: 15px;
+}
+.bdr {
+	border-width: thick;
+	border-style: solid;
+	border-color: #2196f3;
+	border-radius: 3px;
+}

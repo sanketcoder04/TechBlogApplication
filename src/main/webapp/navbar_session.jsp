@@ -1,0 +1,24 @@
+<nav class="navbar navbar-expand-lg navbar-dark primary-background">
+	<!-- primary-background is a custom class -->
+	<a class="navbar-brand" href="#"><span
+		class="fa fa-object-group pad-icon-right"></span>Tech Blog</a>
+	<button class="navbar-toggler" type="button" data-toggle="collapse"
+		data-target="#navbarSupportedContent"
+		aria-controls="navbarSupportedContent" aria-expanded="false"
+		aria-label="Toggle navigation">
+		<span class="navbar-toggler-icon"></span>
+	</button>
+
+	<div class="collapse navbar-collapse" id="navbarSupportedContent">
+		<ul class="navbar-nav mr-auto">
+			<li class="nav-item active"><a class="nav-link" href="home.jsp"><span class="fa fa-home pad-icon-right"></span>Home</a></li>
+			<li class="nav-item active"><a class="nav-link" href="about.jsp"><span class="fa fa-file-text pad-icon-right"></span>About</a></li>
+			<li class="nav-item active"><a class="nav-link" href="contact.jsp"><span class="fa fa-phone pad-icon-right"></span>Contacts</a></li>
+			<li class="nav-item active"><a class="nav-link" href="blogs.jsp"><span class="fa fa-th pad-icon-right"></span>Blogs</a></li>
+			<li class="nav-item active"><a class="nav-link" href="profile.jsp"><span class="fa fa-user-circle pad-icon-right"></span>Profile</a></li>
+		</ul>
+		<ul class="navbar-nav mr-right">
+			<li class="nav-item active"><a class="nav-link" href="LogoutServlet"><span class="fa fa-sign-out pad-icon-right"></span>Logout</a></li>
+		</ul>
+	</div>
+</nav>

@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns="http://xmlns.jcp.org/xml/ns/javaee" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/javaee http://xmlns.jcp.org/xml/ns/javaee/web-app_4_0.xsd" id="WebApp_ID" version="4.0">
+  <display-name>TechBlogApplication</display-name>
+  <welcome-file-list>
+    <welcome-file>index.html</welcome-file>
+    <welcome-file>index.jsp</welcome-file>
+    <welcome-file>index.htm</welcome-file>
+    <welcome-file>default.html</welcome-file>
+    <welcome-file>default.jsp</welcome-file>
+    <welcome-file>default.htm</welcome-file>
+  </welcome-file-list>
+  
+  <!-- Sign Up Module Configuration -->
+  <servlet>
+	<servlet-name>SignUpServlet</servlet-name>
+	<servlet-class>techblog.servlets.SignUpServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>SignUpServlet</servlet-name>
+	<url-pattern>/SignUpServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Sign In Module Configuration -->
+  <servlet>
+	<servlet-name>LoginServlet</servlet-name>
+	<servlet-class>techblog.servlets.LoginServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>LoginServlet</servlet-name>
+	<url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Log Out Module Configuration -->
+  <servlet>
+	<servlet-name>LogoutServlet</servlet-name>
+	<servlet-class>techblog.servlets.LogOutServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>LogoutServlet</servlet-name>
+	<url-pattern>/LogoutServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Edit Data -->
+  <servlet>
+	<servlet-name>EditServlet</servlet-name>
+	<servlet-class>techblog.servlets.EditServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>EditServlet</servlet-name>
+	<url-pattern>/EditServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Adding Blogs -->
+  <servlet>
+	<servlet-name>AddBlogServlet</servlet-name>
+	<servlet-class>techblog.servlets.AddBlogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>AddBlogServlet</servlet-name>
+	<url-pattern>/AddBlogServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- Delete Profile -->
+  <servlet>
+	<servlet-name>DeleteServlet</servlet-name>
+	<servlet-class>techblog.servlets.DeleteServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+	<servlet-name>DeleteServlet</servlet-name>
+	<url-pattern>/DeleteServlet</url-pattern>
+  </servlet-mapping>
+  
+  <!-- 404 Error Page -->
+  <error-page>
+	<error-code>404</error-code>
+	<location>/error_404.jsp</location>
+  </error-page>
+  
+</web-app>
